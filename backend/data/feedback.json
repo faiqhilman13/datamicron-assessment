@@ -1,0 +1,576 @@
+[
+  {
+    "feedback_id": "fb_1_1763803625",
+    "response_id": "test_001",
+    "timestamp": "2025-11-22T17:27:05.333120",
+    "query": "Test query about Malaysian news",
+    "answer": "Test answer with sources",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Test Article",
+        "author": "Test Author",
+        "url": "https://test.com",
+        "relevance_score": 0.85,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 9,
+      "factuality": 8,
+      "completeness": 9
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_2_1763803650",
+    "response_id": "test_001",
+    "timestamp": "2025-11-22T17:27:30.576340",
+    "query": "Test query 1",
+    "answer": "Test answer 1",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.8,
+    "judge_scores": {
+      "relevance": 5,
+      "factuality": 5,
+      "completeness": 4
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_3_1763803651",
+    "response_id": "test_002",
+    "timestamp": "2025-11-22T17:27:31.102171",
+    "query": "Test query 2",
+    "answer": "Test answer 2",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Web Result",
+        "author": null,
+        "url": "https://test.com",
+        "relevance_score": 0.8,
+        "sentiment": null
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.6,
+    "judge_scores": {
+      "relevance": 9,
+      "factuality": 9,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": true,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_4_1763803651",
+    "response_id": "test_003",
+    "timestamp": "2025-11-22T17:27:31.635370",
+    "query": "Test query 3",
+    "answer": "Test answer 3",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.8,
+    "judge_scores": {
+      "relevance": 5,
+      "factuality": 5,
+      "completeness": 4
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_5_1763803652",
+    "response_id": "test_004",
+    "timestamp": "2025-11-22T17:27:32.153392",
+    "query": "Test query 4",
+    "answer": "Test answer 4",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Web Result",
+        "author": null,
+        "url": "https://test.com",
+        "relevance_score": 0.8,
+        "sentiment": null
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.6,
+    "judge_scores": {
+      "relevance": 9,
+      "factuality": 9,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": true,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_6_1763803652",
+    "response_id": "test_005",
+    "timestamp": "2025-11-22T17:27:32.682723",
+    "query": "Test query 5",
+    "answer": "Test answer 5",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.8,
+    "judge_scores": {
+      "relevance": 5,
+      "factuality": 5,
+      "completeness": 4
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_7_1763803725",
+    "response_id": "batch1_1",
+    "timestamp": "2025-11-22T17:28:45.349329",
+    "query": "Query 1",
+    "answer": "Answer 1",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.7,
+    "judge_scores": {
+      "relevance": 7,
+      "factuality": 7,
+      "completeness": 7
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_8_1763803725",
+    "response_id": "batch1_2",
+    "timestamp": "2025-11-22T17:28:45.877159",
+    "query": "Query 2",
+    "answer": "Answer 2",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.7,
+    "judge_scores": {
+      "relevance": 7,
+      "factuality": 7,
+      "completeness": 7
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_9_1763803726",
+    "response_id": "batch1_3",
+    "timestamp": "2025-11-22T17:28:46.402958",
+    "query": "Query 3",
+    "answer": "Answer 3",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.7,
+    "judge_scores": {
+      "relevance": 7,
+      "factuality": 7,
+      "completeness": 7
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_10_1763803726",
+    "response_id": "batch1_4",
+    "timestamp": "2025-11-22T17:28:46.928140",
+    "query": "Query 4",
+    "answer": "Answer 4",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.7,
+    "judge_scores": {
+      "relevance": 7,
+      "factuality": 7,
+      "completeness": 7
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_11_1763803727",
+    "response_id": "batch1_5",
+    "timestamp": "2025-11-22T17:28:47.454494",
+    "query": "Query 5",
+    "answer": "Answer 5",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.7,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.7,
+    "judge_scores": {
+      "relevance": 7,
+      "factuality": 7,
+      "completeness": 7
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_12_1763803727",
+    "response_id": "batch2_1",
+    "timestamp": "2025-11-22T17:28:47.973053",
+    "query": "Query 1",
+    "answer": "Answer 1",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.75,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 8,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_13_1763803728",
+    "response_id": "batch2_2",
+    "timestamp": "2025-11-22T17:28:48.504277",
+    "query": "Query 2",
+    "answer": "Answer 2",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.75,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 8,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_14_1763803729",
+    "response_id": "batch2_3",
+    "timestamp": "2025-11-22T17:28:49.021729",
+    "query": "Query 3",
+    "answer": "Answer 3",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.75,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 8,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_15_1763803729",
+    "response_id": "batch2_4",
+    "timestamp": "2025-11-22T17:28:49.546592",
+    "query": "Query 4",
+    "answer": "Answer 4",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.75,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 8,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_16_1763803730",
+    "response_id": "batch2_5",
+    "timestamp": "2025-11-22T17:28:50.067509",
+    "query": "Query 5",
+    "answer": "Answer 5",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Article",
+        "author": "Author",
+        "url": "https://test.com",
+        "relevance_score": 0.75,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "negative",
+    "confidence": 0.75,
+    "judge_scores": {
+      "relevance": 8,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_17_1763855368",
+    "response_id": "c8f98e03e6a5b41d",
+    "timestamp": "2025-11-23T07:49:28.016529",
+    "query": "\"What are some initiatives launched by MCMC?\"",
+    "answer": "Some initiatives launched by the Malaysian Communications and Multimedia Commission (MCMC) include:\n\n1. Development of a disaster warning system aimed at delivering alerts directly to residents in affected areas, enabling them to receive notifications more promptly without going through telecommunications company services. This initiative seeks to improve the efficiency of disaster warnings to the public (Mohamad Faizal Hashim, Kosmo Digital).\n\n2. Efforts to remove 82,076 pieces of immoral content that violated the provisions of the Malaysian Communications and Multimedia Act [Act 588] and other existing laws, from January 2022 to July of the same year. This action demonstrates MCMC's commitment to regulating and monitoring digital content in order to maintain moral standards (Saadiah Ismail, Kosmo Digital).\n\n3. The allocation of an additional RM30 million to empower Micro, Small, and Medium Enterprises (MSMEs), especially in the health sector, as part of the government's continuous commitment to digitalization initiatives. This funding, facilitated through telecommunications companies, underscores the importance of digitalization in Malaysia's economic sectors (Mohamad Faizal Hashim, Kosmo Digital).\n\n4. The launch of MyTMAP2030, an initiative aimed at shaping Malaysia's digital future. This strategic plan underscores MCMC's role in driving the country's digital transformation agenda, aiming to position Malaysia as a digitally-driven nation (Web sources: [NST](https://www.nst.com.my/news/nation/2025/09/1274041/mcmc-launches-mytmap2030-malaysias-digital-future), [The Vibes](https://www.thevibes.com/articles/news/112671/mcmc-launches-mytmap2030-and-co-hosts-regional-ai-standards-workshop-with-itu)).\n\nThese initiatives highlight MCMC's multifaceted approach towards enhancing Malaysia's digital landscape, from improving disaster response mechanisms and maintaining digital content standards to supporting the growth of the digital economy and leading the national digital transformation efforts.",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Bungkusan mencurigakan guna nama Pengerusi, MCMC buat laporan polis",
+        "author": "Bernama",
+        "url": "https://www.bharian.com.my/berita/kes/2025/08/1436421/bungkusan-mencurigakan-guna-nama-pengerusi-mcmc-buat-laporan-polis",
+        "relevance_score": 1.0,
+        "sentiment": "Positive"
+      },
+      {
+        "type": "internal",
+        "title": "MCMC cadang bangun sistem amaran bencana lebih efisien",
+        "author": "Mohamad Faizal Hashim",
+        "url": "https://www.kosmo.com.my/2025/08/24/mcmc-cadang-bangun-sistem-amaran-bencana-lebih-efisien/",
+        "relevance_score": 0.9980358716439076,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "MCMC turunkan 82,076 kandungan tak bermoral sejak 19 bulan lalu - Menteri",
+        "author": "Saadiah Ismail",
+        "url": "https://www.bharian.com.my/berita/nasional/2025/08/1432980/mcmc-turunkan-82076-kandungan-tak-bermoral-sejak-19-bulan-lalu",
+        "relevance_score": 0.7246867052971327,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "Peruntukan tambahan RM30 juta perkasa PMKS, tumpu sektor kesihatan",
+        "author": "Mohamad Faizal Hashim",
+        "url": "https://www.kosmo.com.my/2025/08/10/peruntukan-tambahan-rm30-juta-perkasa-pmks-tumpu-sektor-kesihatan/",
+        "relevance_score": 0.5942873629627762,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "Mahkamah benarkan permohonan pembelaan dapatkan dokumen SSM berkaitan kes Revenue Group",
+        "author": "Wartawan BH",
+        "url": "https://www.bharian.com.my/berita/kes/2025/05/1402731/mahkamah-benarkan-permohonan-pembelaan-dapatkan-dokumen-ssm-berkaitan-kes",
+        "relevance_score": 0.0,
+        "sentiment": "Positive"
+      },
+      {
+        "type": "web",
+        "title": "MCMC launches MyTMAP2030 for Malaysia's digital future",
+        "author": "",
+        "url": "https://www.nst.com.my/news/nation/2025/09/1274041/mcmc-launches-mytmap2030-malaysias-digital-future",
+        "relevance_score": 0.8,
+        "sentiment": ""
+      },
+      {
+        "type": "web",
+        "title": "MCMC launches MyTMAP2030 and co-hosts regional AI standards workshop with ITU",
+        "author": "",
+        "url": "https://www.thevibes.com/articles/news/112671/mcmc-launches-mytmap2030-and-co-hosts-regional-ai-standards-workshop-with-itu",
+        "relevance_score": 0.8,
+        "sentiment": ""
+      },
+      {
+        "type": "web",
+        "title": "Read News MyCC AND MCMC STRENGTHEN COLLABORATION WITH MOU SIGNING ASEAN Competition",
+        "author": "",
+        "url": "https://asean-competition.org/read-news-mycc-and-mcmc-strengthen-collaboration-with-mou-signing",
+        "relevance_score": 0.8,
+        "sentiment": ""
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.768,
+    "judge_scores": {
+      "relevance": 9,
+      "factuality": 8,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": true,
+    "comment": null
+  },
+  {
+    "feedback_id": "fb_18_1763855422",
+    "response_id": "258e500ccafbfbfd",
+    "timestamp": "2025-11-23T07:50:22.512550",
+    "query": "\"What are some initiatives launched by MCMC?\"",
+    "answer": "Some of the initiatives launched by the Malaysian Communications and Multimedia Commission (MCMC) include:\n\n1. Developing a more efficient disaster warning system that delivers alerts directly to residents in affected areas. This initiative aims to enable residents to receive notifications more quickly without going through telecommunications company services regarding natural disaster threats (Mohamad Faizal Hashim, Kosmo Digital).\n\n2. The removal of 82,076 immoral contents identified as violating the provisions of the Malaysian Communications and Multimedia Act [Act 588] and other existing laws since January 1, 2022, up until July 1 of the following year. This effort is part of the government's measures through MCMC to implement screenings and restrictions on applications offering immoral services on platforms like Google Play (Saadiah Ismail).\n\n3. An additional allocation of RM30 million was approved by the Ministry of Finance for MCMC to empower the Micro, Small, and Medium Enterprises (MSMEs), especially in the health sector. This funding, channeled through telecommunications companies, reflects the government's ongoing commitment to implementing digitalization initiatives that are central to the 13th Malaysia Plan (Mohamad Faizal Hashim, Kosmo Digital).\n\nThese initiatives reflect MCMC's commitment to enhancing Malaysia's communications and multimedia infrastructure, ensuring the safety and morality of digital content, and supporting the growth of the digital economy, particularly in the health sector.",
+    "sources": [
+      {
+        "type": "internal",
+        "title": "Bungkusan mencurigakan guna nama Pengerusi, MCMC buat laporan polis",
+        "author": "Bernama",
+        "url": "https://www.bharian.com.my/berita/kes/2025/08/1436421/bungkusan-mencurigakan-guna-nama-pengerusi-mcmc-buat-laporan-polis",
+        "relevance_score": 1.0,
+        "sentiment": "Positive"
+      },
+      {
+        "type": "internal",
+        "title": "MCMC cadang bangun sistem amaran bencana lebih efisien",
+        "author": "Mohamad Faizal Hashim",
+        "url": "https://www.kosmo.com.my/2025/08/24/mcmc-cadang-bangun-sistem-amaran-bencana-lebih-efisien/",
+        "relevance_score": 0.9980358716439076,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "MCMC turunkan 82,076 kandungan tak bermoral sejak 19 bulan lalu - Menteri",
+        "author": "Saadiah Ismail",
+        "url": "https://www.bharian.com.my/berita/nasional/2025/08/1432980/mcmc-turunkan-82076-kandungan-tak-bermoral-sejak-19-bulan-lalu",
+        "relevance_score": 0.7246867052971327,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "Peruntukan tambahan RM30 juta perkasa PMKS, tumpu sektor kesihatan",
+        "author": "Mohamad Faizal Hashim",
+        "url": "https://www.kosmo.com.my/2025/08/10/peruntukan-tambahan-rm30-juta-perkasa-pmks-tumpu-sektor-kesihatan/",
+        "relevance_score": 0.5942873629627762,
+        "sentiment": "Neutral"
+      },
+      {
+        "type": "internal",
+        "title": "Mahkamah benarkan permohonan pembelaan dapatkan dokumen SSM berkaitan kes Revenue Group",
+        "author": "Wartawan BH",
+        "url": "https://www.bharian.com.my/berita/kes/2025/05/1402731/mahkamah-benarkan-permohonan-pembelaan-dapatkan-dokumen-ssm-berkaitan-kes",
+        "relevance_score": 0.0,
+        "sentiment": "Positive"
+      }
+    ],
+    "feedback_type": "positive",
+    "confidence": 0.712,
+    "judge_scores": {
+      "relevance": 9,
+      "factuality": 6,
+      "completeness": 8
+    },
+    "retrieval_method": "hybrid_search_with_reranking",
+    "web_search_triggered": false,
+    "comment": null
+  }
+]
