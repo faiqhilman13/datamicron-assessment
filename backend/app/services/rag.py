@@ -29,10 +29,20 @@ class RAGService:
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.model = os.getenv("LLM_MODEL", "gpt-4-turbo-preview")
 
+        # Check if reranker should be enabled (disabled by default for low-memory environments)
+        self.enable_reranker = os.getenv("ENABLE_RERANKER", "false").lower() == "true"
+
         # Initialize components
         print("Initializing RAG service...")
         self.searcher = HybridSearch(index_dir)
-        self.reranker = Reranker()
+
+        if self.enable_reranker:
+            self.reranker = Reranker()
+            print("✓ Reranker enabled")
+        else:
+            self.reranker = None
+            print("⚠ Reranker disabled (to enable, set ENABLE_RERANKER=true)")
+
         self.judge = LLMJudge()
         self.rl_optimizer = RLOptimizer()  # Add RL optimizer
         print("✓ RAG service ready")
@@ -141,9 +151,17 @@ Answer:"""
         print(f"\n[1/6] Performing hybrid search for: {query}")
         retrieved_docs = self.searcher.hybrid_search(query, top_k=20)
 
-        # Step 2: Reranking
-        print("[2/6] Reranking results...")
-        reranked_docs = self.reranker.rerank(query, retrieved_docs, top_k=5)
+        # Step 2: Reranking (or skip if disabled)
+        if self.enable_reranker and self.reranker:
+            print("[2/6] Reranking results...")
+            reranked_docs = self.reranker.rerank(query, retrieved_docs, top_k=5)
+        else:
+            print("[2/6] Reranking disabled, using top 5 from hybrid search...")
+            reranked_docs = retrieved_docs[:5]
+            # Add dummy rerank scores for compatibility
+            for doc in reranked_docs:
+                if 'rerank_score' not in doc:
+                    doc['rerank_score'] = doc.get('score', 0.5)
 
         # Step 3: Judge retrieval adequacy
         print("[3/6] Evaluating retrieval quality...")
