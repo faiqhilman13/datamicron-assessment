@@ -43,6 +43,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        # Local development
         "http://localhost:3000",
         "http://localhost:5173",
         "http://localhost:5174",
@@ -53,9 +54,8 @@ app.add_middleware(
         "http://127.0.0.1:5174",
         "http://127.0.0.1:5175",
         "http://127.0.0.1:5176",
-        # Production URLs - Add your Netlify/Vercel URL here after deployment
-        # "https://your-app.netlify.app",
-        # "https://your-app.vercel.app",
+        # Production
+        "https://timely-tulumba-ac41cb.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
