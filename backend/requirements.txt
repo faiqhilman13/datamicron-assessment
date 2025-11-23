@@ -1,13 +1,27 @@
+# Core Framework
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-dotenv==1.0.0
-openai>=2.8.0
-pandas==2.1.3
-numpy==1.26.2
-faiss-cpu>=1.8.0
-rank-bm25==0.2.2
-sentence-transformers>=5.1.0
 pydantic==2.5.0
 python-multipart==0.0.6
+
+# API Clients
+openai>=2.8.0
 httpx==0.25.1
 exa-py==2.0.1
+
+# Data Processing
+pandas==2.1.3
+numpy==1.26.2
+
+# Search & ML (CPU-optimized)
+faiss-cpu>=1.8.0
+rank-bm25==0.2.2
+
+# PyTorch CPU-only (install separately for faster builds)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.0+cpu
+torchvision==0.20.0+cpu
+
+# Transformers (depends on torch)
+sentence-transformers>=5.1.0
