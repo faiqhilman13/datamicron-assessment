@@ -1,11 +1,11 @@
 [phases.setup]
-nixPkgs = ["python39", "gcc"]
+nixPkgs = ["python313", "gcc"]
 
 [phases.install]
 cmds = [
   "pip install --no-cache-dir --upgrade pip setuptools wheel",
-  "pip install --no-cache-dir -r requirements.txt"
+  "cd backend && pip install --no-cache-dir -r requirements.txt"
 ]
 
 [start]
-cmd = "cd /app && PYTHONPATH=/app uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT"
+cmd = "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"

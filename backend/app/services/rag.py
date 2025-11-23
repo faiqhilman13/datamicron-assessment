@@ -29,8 +29,8 @@ class RAGService:
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.model = os.getenv("LLM_MODEL", "gpt-4-turbo-preview")
 
-        # Check if reranker should be enabled (disabled by default for low-memory environments)
-        self.enable_reranker = os.getenv("ENABLE_RERANKER", "false").lower() == "true"
+        # Check if reranker should be enabled (enabled by default, can disable with ENABLE_RERANKER=false)
+        self.enable_reranker = os.getenv("ENABLE_RERANKER", "true").lower() == "true"
 
         # Initialize components
         print("Initializing RAG service...")
